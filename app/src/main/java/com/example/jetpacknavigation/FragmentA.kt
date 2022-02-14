@@ -37,6 +37,7 @@ class FragmentA : Fragment() {
         val etText:EditText=view.findViewById(R.id.et_text)
 
         button.setOnClickListener {
+            //go second fragment use only navController
 //            navController?.navigate(R.id.action_fragmentA_to_fragmentB)
             val message = etText.text.toString()
             val action=FragmentADirections.actionFragmentAToFragmentB(message)
